@@ -119,14 +119,14 @@ useEffect(()=>{getUserData()},[])
               <Form.Group className="mb-3" >
                 <Form.Label>Author</Form.Label>
 
-                <Form.Control type="text" placeholder="authorsname" id="authorsname" name="Author.authorsname" onChange={formik.handleChange} value={formik.values.Author.authorsname} onBlur={formik.handleBlur}/>
-                {formik.touched.authorsname&& formik.errors.authorsname ?(<div style={{color:"red"}}>{formik.errors.Author.authorsname}</div>) : null}&nbsp;
+                <Form.Control type="text" placeholder="authorsname" id="authorsname" name="Author.authorsname" onChange={formik.handleChange} value={formik.values.authorsname} onBlur={formik.handleBlur}/>
+                {formik.touched.authorsname&& formik.errors.authorsname ?(<div style={{color:"red"}}>{formik.errors.authorsname}</div>) : null}&nbsp;
 
-                <Form.Control type="date" placeholder="birthdate" id="birthdate" name="Author.birthdate" onChange={formik.handleChange} value={formik.values.Author.birthdate} onBlur={formik.handleBlur}/>
-                {formik.touched.birthdate&& formik.errors.birthdate ?(<div style={{color:"red"}}>{formik.errors.Author.birthdate}</div>) : null}&nbsp;
+                <Form.Control type="date" placeholder="birthdate" id="birthdate" name="Author.birthdate" onChange={formik.handleChange} value={formik.values.birthdate} onBlur={formik.handleBlur}/>
+                {formik.touched.birthdate&& formik.errors.birthdate ?(<div style={{color:"red"}}>{formik.errors.birthdate}</div>) : null}&nbsp;
 
-                <Form.Control type="text" placeholder="shortbio" id="shortbio" name="Author.shortbio" onChange={formik.handleChange} value={formik.values.Author.shortbio} onBlur={formik.handleBlur}/>
-                {formik.touched.shortbio && formik.errors.shortbio?(<div style={{color:"red"}}>{formik.errors.Author.shortbio}</div>) : null}&nbsp;
+                <Form.Control type="text" placeholder="shortbio" id="shortbio" name="Author.shortbio" onChange={formik.handleChange} value={formik.values.shortbio} onBlur={formik.handleBlur}/>
+                {formik.touched.shortbio && formik.errors.shortbio?(<div style={{color:"red"}}>{formik.errors.shortbio}</div>) : null}&nbsp;
 
               </Form.Group>
     
